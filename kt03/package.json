@@ -1,0 +1,21 @@
+{
+  "name": "kt03",
+  "version": "1.0.0",
+  "description": "REST API для блог-платформы (Express + Prisma)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3"
+  },
+  "devDependencies": {
+    "prisma": "^6.2.0"
+  }
+}
